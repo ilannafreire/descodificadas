@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.imagem {
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: none;
+    box-shadow:
+        0 0 10px rgba(223, 19, 19, 0.5), 
+        20px 20px 20px rgba(179, 98, 89, 0.3), 
+        10px 10px 40px rgba(159, 38, 13, 0.2); 
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.imagem-com-borda {
+    border: 5px solid #cc1a1a;
+    border-radius: 10px; /* Arredonda os cantos da borda */
+  }
+
+  .image-container {
+    border: 2px solid rgb(167, 38, 38); /* Define a largura e a cor da borda */
+    display: inline-block; /* Garante que a borda se ajuste ao tamanho da imagem */
+    padding: 5px; /* Espaçamento entre a imagem e a borda */
+}
+
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+}
+
+ 
