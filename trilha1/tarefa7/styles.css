@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    left: 0%;
+    right: 0%;
+    top: 50%;
+    bottom: 0%;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 5px;
+}
+
+div {
+    display: inline-block;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red:hover {
+    background-color: #ff6666;
+}
+
+.blue:hover {
+    background-color: #6666ff;
+}
+
+.green:hover {
+    background-color: #66ff66;
+}
+
+.yellow:hover {
+    background-color: #ffff66;
+}
