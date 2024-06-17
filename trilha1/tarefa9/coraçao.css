@@ -1,0 +1,74 @@
+/* Styles for the heart element */
+.coracao {
+    width: 40vw;
+    height: auto;
+    margin: 50px auto;
+    position: relative;
+    top: 50%;
+    left: 30%;
+  
+    /* Animations */
+    animation: pulsar 1s linear infinite, mudarCor 3s linear infinite;
+  }
+  
+  /* Animation keyframes */
+  @keyframes pulsar {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes mudarCor {
+    0% {
+      filter: hue-rotate(0deg); /* Amarelo */
+    }
+    33% {
+      filter: hue-rotate(330deg); /* Rosa */
+    }
+    66% {
+      filter: hue-rotate(270deg); /* Roxo */
+    }
+    100% {
+      filter: hue-rotate(0deg); /* Volta para amarelo */
+    }
+  }
+  
+ 
+  .container {
+    width: 30%;
+    height: 100px; /* Adjust if needed */
+    background-image: url('/trilha1/tarefa9/img/imagem-mulheres.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Or 'contain' or other values */
+    background-position: center; /* Or 'top left', 'bottom right', etc. */
+    background-repeat: no-repeat; 
+    z-index: -1;
+  }
+
+
+  
+  /* Styles for the title container */
+  .title-container {
+    position: relative; /* Make the paragraph positionable */
+    padding: 20px;
+    background-color: #ece10f;
+    
+  }
+  
+  .h1 {
+    color: rgb(223, 62, 196);
+    position: center;
+    
+   
+  }
+  
+  /* Styles for the canvas container */
+  .canvas-container {
+    position: relative;
+  }
+  
